@@ -134,16 +134,21 @@ nav .menu-btn {
     box-shadow: 5px 10px 10px var(--header-text);
 }
 .add__todo__lst .user-input #user-item {
-    background-color: #fff;
+    background-color: #000;
     padding: 10px 20px;
     box-shadow: 5px 10px 10px var(--header-text);
     cursor: pointer;
-    color: #000;
+    color: var(--p-text);
     font-size: 15px;
     margin-left: 10px;
+    width: 150px;
+}
+.add__todo__lst .user-input #user-item:hover {
+    border: 1px solid var(--text-color);
+
 }
 
-.add__todo__lst #user-input #user-item:active {
+.add__todo__lst .user-input  #user-item:active {
     padding: 9px 19px;
 }
 

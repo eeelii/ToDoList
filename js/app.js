@@ -45,7 +45,7 @@ function appendItem() {
     const userValue = userInput.value;
     while (counter < list.length) {
         if (userValue === "") {
-            addItem.innerHTML = "Add Something";
+            addItem.innerHTML = ":(";
         } else {
             addItem.innerHTML = "Add";
             list[counter].innerHTML = userValue;
