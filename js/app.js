@@ -44,17 +44,25 @@ function crossOutCheckLst(e) {
 function appendItem() {
     const userValue = userInput.value;
     while (counter < list.length) {
-        list[counter].innerHTML = userValue;
-        list[counter].style.display = "block";
-        counter++;
-        resetInput()
-        break;
-    }
+        if (userValue === "") {
+            addItem.innerHTML = "Add Something";
+        } else {
+            addItem.innerHTML = "Add";
+            list[counter].innerHTML = userValue;
+            list[counter].style.display = "block";
+            counter++;
+            resetInput()
+        };
 
-    if (counter === list.length) {
-        addItem.innerHTML = "Nope";
-    }
-}
+        if (counter === list.length) {
+            addItem.innerHTML = "Nope";
+        }
+        break;
+    } //end of while loop here 
+
+}  //end of function here 
+
+
 
 
 // create a loop to cross_out all of the task list when done 
