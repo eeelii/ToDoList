@@ -48,7 +48,7 @@ function appendItem() {
             addItem.innerHTML = ":(";
         } else {
             addItem.innerHTML = "Add";
-            list[counter].innerHTML = userValue;
+            list[counter].innerHTML = ` ${counter + 1}. ${userValue}`;
             list[counter].style.display = "block";
             counter++;
             resetInput()

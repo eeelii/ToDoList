@@ -2,13 +2,14 @@
     padding: 0;
     margin: 0;
 }
- :root {
+
+:root {
     --text-color: #909090;
     --header-text: #494848;
     --p-text: #f1e8e5;
 
- }
- 
+}
+
 
 body {
     background-color: var(--header-text);
@@ -44,6 +45,7 @@ nav .nav-items a {
     text-align: center;
     padding-right: 10px;
 }
+
 nav .show-items {
     display: flex;
 }
@@ -56,6 +58,7 @@ nav .nav-items a:hover {
     border-radius: 20%;
     padding: 10px;
 }
+
 nav .menu-btn {
     display: none;
     width: 80px;
@@ -72,6 +75,7 @@ nav .menu-btn {
     align-items: center;
     height: 800px;
 }
+
 .main-content .todo-container {
     display: flex;
     /* justify-content: center; */
@@ -84,7 +88,7 @@ nav .menu-btn {
     margin: 0 auto;
 }
 
-.main-content .app-header{
+.main-content .app-header {
     font-size: 30px;
     font-weight: 800;
     text-transform: uppercase;
@@ -102,11 +106,13 @@ nav .menu-btn {
     width: 50px;
     height: 50px;
 }
-.main-content img:hover{
+
+.main-content img:hover {
     width: 40px;
     height: 40px;
     cursor: pointer;
 }
+
 .main-content img:hover {
     border: 2px solid var(--p-text);
 }
@@ -117,6 +123,7 @@ nav .menu-btn {
     margin: 0 auto;
     padding: 20px 0;
 }
+
 .add__todo__lst .user-input {
     display: none;
     width: 50%;
@@ -124,6 +131,7 @@ nav .menu-btn {
     justify-content: space-around;
     align-items: center;
 }
+
 .add__todo__lst .hide__input {
     display: flex;
 }
@@ -137,6 +145,7 @@ nav .menu-btn {
     height: 25px;
     width: 300px;
 }
+
 .add__todo__lst .user-input #user-item {
     background-color: #000;
     padding: 10px 20px;
@@ -146,13 +155,15 @@ nav .menu-btn {
     font-size: 15px;
     margin-left: 10px;
     width: 150px;
+    border-radius: 10px;
 }
+
 .add__todo__lst .user-input #user-item:hover {
     border: 1px solid var(--text-color);
 
 }
 
-.add__todo__lst .user-input  #user-item:active {
+.add__todo__lst .user-input #user-item:active {
     padding: 9px 19px;
 }
 
@@ -179,50 +190,60 @@ nav .menu-btn {
 }
 
 /* *************MOBILE NAV BAR  AND APP************* */
-@media  only screen and (max-width: 820px) {
+@media only screen and (max-width: 820px) {
     nav .menu-btn {
         display: block;
     }
+
     nav .nav-items {
         display: none;
     }
+
     .logo {
         display: flex;
         justify-content: space-between;
         width: 100%;
         align-items: center;
     }
+
     nav {
         display: block;
     }
+
     nav .show-items {
         display: flex;
         justify-content: center;
         width: 100%;
     }
+
     /* ******** DESIGN APP MOBILE HERE ******** */
     .main-content .todo-container {
         height: 85%;
     }
+
     .todo-container .app-header {
         display: flex;
         flex-wrap: wrap;
         font-size: 20px;
     }
+
     .add__todo__lst .hide__input {
         display: flex;
         flex-wrap: wrap-reverse;
     }
+
     .add__todo__lst #todo__item {
         padding: 10px 10px;
     }
+
     .add__todo__lst .user-input {
         justify-content: space-around;
         margin: 20px 0;
         width: 100%;
     }
+
     .add__todo__lst .user-input #user-item {
-        
+
         margin-left: 0px;
     }
 }
