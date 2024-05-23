@@ -62,6 +62,14 @@ function appendItem() {
 
 }  //end of function here 
 
+// create a function to remove a button on double click 
+function removeBtn(e){
+    const removeItem = e.target;
+    removeItem.innerHTML = "";
+    removeItem.style.display = "none";
+    // removeItem.innerHTML = "This is working";
+}
+
 
 
 
@@ -70,7 +78,9 @@ for (let i = 0; i < list.length; i++) {
     list[i].onclick = crossOutCheckLst;
 }
 
-
+for (let r = 0; r < list.length; r++) {
+    list[r].ondblclick = removeBtn;
+}
 
 addItem.onclick = appendItem;
 imgBtn.onclick = addToDoLst;
