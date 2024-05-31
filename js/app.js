@@ -63,7 +63,7 @@ function appendItem() {
 }  //end of function here 
 
 // create a function to remove a button on double click 
-function removeBtn(e){
+function removeBtn(e) {
     const removeItem = e.target;
     removeItem.innerHTML = "";
     removeItem.style.display = "none";
